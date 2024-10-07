@@ -1,6 +1,12 @@
 #include <iostream>
+#include "Board.h"
 
-int main()
+using namespace std;
+
+void main()
 {
-    std::cout << "Hello World!\n";
+    Board* board = new Board();
+    board->ResetPieces();
+    cout << board->_Grid[0][0]->Move(1,0,board->_Grid);
+    return;
 }
