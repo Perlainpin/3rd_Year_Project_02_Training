@@ -46,7 +46,8 @@
               "RelativeToolTip": "Semaine_Formation_Echec\\Board.h",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAABEAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-08T14:32:32.604Z"
+              "WhenOpened": "2024-10-08T14:32:32.604Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -56,7 +57,7 @@
               "RelativeDocumentMoniker": "Semaine_Formation_Echec\\Board.cpp",
               "ToolTip": "C:\\Users\\ncoulon\\Documents\\GitHub\\Semaine_Formation_Echec\\Semaine_Formation_Echec\\Board.cpp",
               "RelativeToolTip": "Semaine_Formation_Echec\\Board.cpp",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAGcAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-08T11:22:10.147Z",
               "EditorCaption": ""
@@ -105,7 +106,7 @@
               "RelativeDocumentMoniker": "Semaine_Formation_Echec\\Semaine_Formation_Echec.cpp",
               "ToolTip": "C:\\Users\\ncoulon\\Documents\\GitHub\\Semaine_Formation_Echec\\Semaine_Formation_Echec\\Semaine_Formation_Echec.cpp",
               "RelativeToolTip": "Semaine_Formation_Echec\\Semaine_Formation_Echec.cpp",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAcwDYAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-08T11:20:35.821Z",
               "EditorCaption": ""
