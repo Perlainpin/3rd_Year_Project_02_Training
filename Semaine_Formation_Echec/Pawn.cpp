@@ -1,8 +1,9 @@
 #include "Pawn.h"
 
-Pawn::Pawn(int color){
-	_symbole = 'P';
-	_color = color;
+Pawn::Pawn(int _color){
+	symbol = "P";
+	firstMove = true;
+	color = _color;
 }
 
 Pawn::~Pawn() {

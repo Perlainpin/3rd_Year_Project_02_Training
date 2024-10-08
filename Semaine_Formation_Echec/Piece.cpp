@@ -1,7 +1,13 @@
 #include "Piece.h"
+#include <iostream>
 
 Piece::Piece() {
-	_symbole = 'X';
+
+}
+
+Piece::Piece(int _color) {
+	symbol = "O";
+	color = _color;
 }
 
 Piece::~Piece() {
@@ -10,13 +16,19 @@ Piece::~Piece() {
 
 void Piece::SetPosition(int x, int y, Piece* board[8][8]){
 	// if board case is occupied, eat the piece (except if you are a pawn)
+	
 	if(isCaseEmpty(x,y,board)){
 		board[x][y] = this;
 		board[position[0]][position[1]] = nullptr;
 	}
+	position[0] = x;
+	position[1] = y;
 }
 
 bool Piece::Move(int x, int y, Piece* board[8][8]) {
+	if (board[x][y] == nullptr)
+		return false;
+	std::cout << "Moving piece from " << position[0] << ", " << position[1] << " to " << x << ", " << y << "\n";
 	return false;
 }
 

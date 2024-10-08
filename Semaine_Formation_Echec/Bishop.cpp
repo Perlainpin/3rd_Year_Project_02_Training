@@ -2,9 +2,9 @@
 
 #include "Bishop.h"
 
-Bishop::Bishop(int color){
-	_symbole = 'B';
-	_color = color;
+Bishop::Bishop(int _color){
+	symbol = "B";
+	color = _color;
 }
 
 Bishop::~Bishop() {
@@ -13,6 +13,7 @@ Bishop::~Bishop() {
 
 bool Bishop::Move(int x, int y, Piece* board[8][8])
 {
+	std::cout << "Moving bishop from " << position[0] << ", " << position[1] << " to " << x << ", " << y << "\n";
 	if(isCaseEmpty(x, y, board) == false){
 		return false;
 	}

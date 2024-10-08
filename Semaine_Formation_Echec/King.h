@@ -4,7 +4,7 @@
 class King : public Piece 
 {
 public:
-	King(int color);
+	King(int _color);
 	virtual ~King();
 
 	bool Move(int x, int y, Piece* board[8][8]);
