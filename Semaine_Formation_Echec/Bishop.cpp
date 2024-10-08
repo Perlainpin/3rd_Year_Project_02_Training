@@ -2,8 +2,9 @@
 
 #include "Bishop.h"
 
-Bishop::Bishop(){
-
+Bishop::Bishop(int color){
+	_symbole = 'B';
+	_color = color;
 }
 
 Bishop::~Bishop() {

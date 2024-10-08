@@ -1,11 +1,12 @@
 #pragma once
-#include <vector>
+#include "Utility.h"
 
 class Piece
 {
 public:
 	std::vector<int> position;
-	int color;
+	int _color;
+	char _symbole;
 	
 	Piece();
 	virtual ~Piece();

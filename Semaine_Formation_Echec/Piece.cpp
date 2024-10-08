@@ -1,7 +1,7 @@
 #include "Piece.h"
 
 Piece::Piece() {
-
+	_symbole = 'X';
 }
 
 Piece::~Piece() {

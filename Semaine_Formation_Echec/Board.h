@@ -15,6 +15,7 @@ public:
 	Piece* _Grid[8][8];
 
 	void ResetPieces();
+	void Show();
 };
 
 

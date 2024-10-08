@@ -1,31 +1,30 @@
 #include "Board.h"
 
 #ifdef _LITE
-	Piece* Gridtemplate[8][8] = {
-			{ new Rook, new Pawn, new Bishop, new Pawn, new King, new Bishop, new Pawn, new Rook },
-			{ new Pawn,  new Pawn,  new Pawn,  new Pawn,  new Pawn,  new Pawn,  new Pawn, new Pawn },
-			{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
-			{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
-			{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
-			{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
-			{ new Pawn,  new Pawn,  new Pawn,  new Pawn,  new Pawn,  new Pawn,  new Pawn, new Pawn },
-			{ new Rook, new Pawn, new Bishop, new Pawn, new King, new Bishop, new Pawn, new Rook },
-	};
+Piece* Gridtemplate[8][8] = {
+		{ new Rook(1), new Pawn(1), new Bishop(1), new Pawn(1), new King(1), new Bishop(1), new Pawn(1), new Rook(1)},
+		{ new Pawn(1),  new Pawn(1),  new Pawn(1),  new Pawn(1),  new Pawn(1),  new Pawn(1),  new Pawn(1), new Pawn(1)},
+		{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
+		{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
+		{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
+		{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
+		{ new Pawn(0),  new Pawn(0),  new Pawn(0),  new Pawn(0),  new Pawn(0),  new Pawn(0),  new Pawn(0), new Pawn(0)},
+		{ new Rook(0), new Pawn(0), new Bishop(0), new Pawn(0), new King(0), new Bishop(0), new Pawn(0), new Rook(0)},
+};
 #else
-	Piece* Gridtemplate[8][8] = {
-			{ new Rook, new Knight, new Bishop, new Queen, new King, new Bishop, new Knight, new Rook },
-			{ new Pawn,  new Pawn,  new Pawn,  new Pawn,  new Pawn,  new Pawn,  new Pawn, new Pawn },
-			{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
-			{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
-			{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
-			{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
-			{ new Pawn,  new Pawn,  new Pawn,  new Pawn,  new Pawn,  new Pawn,  new Pawn, new Pawn },
-			{ new Rook, new Knight, new Bishop, new Queen, new King, new Bishop, new Knight, new Rook },
-	};
+Piece* Gridtemplate[8][8] = {
+		{ new Rook(1), new Knight(1), new Bishop(1), new Queen(1), new King(1), new Bishop(1), new Knight(1), new Rook(1)},
+		{ new Pawn(1),  new Pawn(1),  new Pawn(1),  new Pawn(1),  new Pawn(1),  new Pawn(1),  new Pawn(1), new Pawn(1)},
+		{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
+		{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
+		{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
+		{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
+		{ new Pawn(0),  new Pawn(0),  new Pawn(0),  new Pawn(0),  new Pawn(0),  new Pawn(0),  new Pawn(0), new Pawn(0)},
+		{ new Rook(0), new Knight(0), new Bishop(0), new Queen(0), new King(0), new Bishop(0), new Knight(0), new Rook(0)},
+};
 #endif
 
-
-
+using namespace std;
 
 Board::Board() {
 
@@ -59,4 +58,18 @@ void Board::ResetPieces() {
 	}
 
 };
+
+void Board::Show() {
+	for (int i = 0; i < 8; i++) {
+		for (int j = 0; j < 8; j++) {
+			if (_Grid[i][j] == nullptr) {
+				cout << "-";
+			}
+			else {
+				cout << _Grid[i][j]->_symbole;
+			}
+		}
+		cout << "\n";
+	}
+}
 

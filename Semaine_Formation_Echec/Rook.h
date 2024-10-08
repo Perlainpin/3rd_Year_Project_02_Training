@@ -1,9 +1,10 @@
 #pragma once
 #include "Piece.h"
+
 class Rook : public Piece
 {
 public:
-	Rook();
+	Rook(int color);
 	virtual ~Rook();
 	bool Move(int x, int y, Piece* board[8][8]);
 };
