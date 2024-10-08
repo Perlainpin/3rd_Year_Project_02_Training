@@ -27,6 +27,8 @@ void Piece::SetPosition(int x, int y, Piece* board[8][8]){
 }
 
 bool Piece::Move(int x, int y, Piece* board[8][8]) {
+	if (board[x][y] == nullptr)
+		return false;
 	std::cout << "Moving piece from " << position[0] << ", " << position[1] << " to " << x << ", " << y << "\n";
 	return false;
 }
