@@ -12,6 +12,11 @@
 class Board
 {
 public:
+	int selectedX = 0;
+	int selectedY = 0;
+	int destX = 0;
+	int destY = 0;
+
 	Board();
 	virtual ~Board();
 
