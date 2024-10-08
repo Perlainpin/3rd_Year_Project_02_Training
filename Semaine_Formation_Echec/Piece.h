@@ -1,16 +1,19 @@
 #pragma once
 #include <vector>
+#include <string>
 
 class Piece
 {
 public:
-	std::vector<int> position;
+	std::string symbol;
+	int position[2]{0,0};
 	int color;
 	
 	Piece();
+	Piece(int color);
 	virtual ~Piece();
 
-	bool Move(int x, int y, Piece* board[8][8]);
+	virtual bool Move(int x, int y, Piece* board[8][8]);
 	void SetPosition(int x, int y, Piece* board[8][8]);
 	bool isCaseEmpty(int x, int y, Piece* grid[8][8]);
 };
