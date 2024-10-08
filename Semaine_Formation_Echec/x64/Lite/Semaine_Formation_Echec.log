@@ -1,0 +1,13 @@
+﻿  Bishop.cpp
+  Board.cpp
+  King.cpp
+  Knight.cpp
+  Pawn.cpp
+  Piece.cpp
+  Queen.cpp
+  Rook.cpp
+  Semaine_Formation_Echec.cpp
+  Génération de code en cours...
+C:\Users\ncoulon\Documents\GitHub\Semaine_Formation_Echec\Semaine_Formation_Echec\Pawn.cpp(22,1): warning C4715: 'Pawn::Move' : les chemins de contrôle ne retournent pas tous une valeur
+C:\Users\ncoulon\Documents\GitHub\Semaine_Formation_Echec\Semaine_Formation_Echec\Bishop.cpp(27,1): warning C4715: 'Bishop::Move' : les chemins de contrôle ne retournent pas tous une valeur
+  Semaine_Formation_Echec.vcxproj -> C:\Users\ncoulon\Documents\GitHub\Semaine_Formation_Echec\x64\Lite\Semaine_Formation_Echec.exe

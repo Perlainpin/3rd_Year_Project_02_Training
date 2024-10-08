@@ -4,18 +4,29 @@
 #define COLOR_BLACK "\033[37;40m"
 #define COLOR_BLUE "\033[30;44m"
 
-Piece* Gridtemplate[8][8] = {
+#ifdef _LITE
+	Piece* Gridtemplate[8][8] = {
+			{ new Rook(1), new Pawn(1), new Bishop(1), new Pawn(1), new King(1), new Bishop(1), new Pawn(1), new Rook(1)},
+			{ new Pawn(1),  new Pawn(1),  new Pawn(1),  new Pawn(1),  new Pawn(1),  new Pawn(1),  new Pawn(1), new Pawn(1)},
+			{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
+			{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
+			{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
+			{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
+			{ new Pawn(0),  new Pawn(0),  new Pawn(0),  new Pawn(0),  new Pawn(0),  new Pawn(0),  new Pawn(0), new Pawn(0)},
+			{ new Rook(0), new Pawn(0), new Bishop(0), new Pawn(0), new King(0), new Bishop(0), new Pawn(0), new Rook(0)},
+	};
+#else
+	Piece* Gridtemplate[8][8] = {
 		{ new Rook(1), new Knight(1), new Bishop(1), new Queen(1), new King(1), new Bishop(1), new Knight(1), new Rook(1)},
-		//{ new Pawn(1),  new Pawn(1),  new Pawn(1),  new Pawn(1),  new Pawn(1),  new Pawn(1),  new Pawn(1), new Pawn(1)},
+		{ new Pawn(1),  new Pawn(1),  new Pawn(1),  new Pawn(1),  new Pawn(1),  new Pawn(1),  new Pawn(1), new Pawn(1)},
 		{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
 		{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
 		{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
 		{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
-		{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
-		{ nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr },
-		//{ new Pawn(0),  new Pawn(0),  new Pawn(0),  new Pawn(0),  new Pawn(0),  new Pawn(0),  new Pawn(0), new Pawn(0)},
+		{ new Pawn(0),  new Pawn(0),  new Pawn(0),  new Pawn(0),  new Pawn(0),  new Pawn(0),  new Pawn(0), new Pawn(0)},
 		{ new Rook(0), new Knight(0), new Bishop(0), new Queen(0), new King(0), new Bishop(0), new Knight(0), new Rook(0)},
-};
+	};
+#endif
 
 Board::Board() {
 };
