@@ -1,0 +1,14 @@
+﻿  Bishop.cpp
+  Board.cpp
+  King.cpp
+  Knight.cpp
+  Pawn.cpp
+  Piece.cpp
+  Queen.cpp
+  Rook.cpp
+  Semaine_Formation_Echec.cpp
+C:\Users\greboul\source\repos\Semaine_Formation_Echec\Semaine_Formation_Echec\Semaine_Formation_Echec.cpp(6,6): warning C4326: le type de retour de 'main' doit être 'int' au lieu de 'void'
+  Génération de code en cours...
+C:\Users\greboul\source\repos\Semaine_Formation_Echec\Semaine_Formation_Echec\Bishop.cpp(25,1): warning C4715: 'Bishop::Move' : les chemins de contrôle ne retournent pas tous une valeur
+Semaine_Formation_Echec.obj : error LNK2019: symbole externe non résolu "public: bool __cdecl Piece::Move(int,int,class Piece * (* const)[8])" (?Move@Piece@@QEAA_NHHQEAY07PEAV1@@Z) référencé dans la fonction main
+C:\Users\greboul\source\repos\Semaine_Formation_Echec\x64\Debug\Semaine_Formation_Echec.exe : fatal error LNK1120: 1 externes non résolus

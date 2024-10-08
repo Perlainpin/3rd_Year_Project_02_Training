@@ -16,9 +16,9 @@ void Piece::SetPosition(int x, int y, Piece* board[8][8]){
 	}
 }
 
-/*bool Piece::Move(int x, int y, Piece* board[8][8]) {
+bool Piece::Move(int x, int y, Piece* board[8][8]) {
 	return false;
-}*/
+}
 
 bool Piece::isCaseEmpty(int x, int y, Piece* grid[8][8]) {
 	if (grid[x][y] != nullptr) {

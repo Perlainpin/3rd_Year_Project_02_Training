@@ -1,0 +1,3 @@
+﻿  Semaine_Formation_Echec.cpp
+C:\Users\greboul\source\repos\Semaine_Formation_Echec\Semaine_Formation_Echec\Semaine_Formation_Echec.cpp(22,6): warning C4326: le type de retour de 'main' doit être 'int' au lieu de 'void'
+  Semaine_Formation_Echec.vcxproj -> C:\Users\greboul\source\repos\Semaine_Formation_Echec\x64\Lite\Semaine_Formation_Echec.exe
